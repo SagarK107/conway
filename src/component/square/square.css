@@ -1,0 +1,15 @@
+.square {
+    display:inline-block;
+    margin:5px;
+    padding:5px;
+
+}
+.square__live {
+    background-color: yellow;
+    
+}
+
+.square__dead {
+    background-color: gray;
+    
+}
