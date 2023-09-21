@@ -1,8 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Conway from './component/Conway/Conway';
-import Button from 'react-bootstrap/Button';
-import React, { useState, useEffect,useContext } from 'react';
+import React, { useState } from 'react';
 
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   const [reset,setReset] = useState(false)
   return (
     <div className="App">
-      <Conway length={10} width={10} started={started} reset={reset} setStarted={setStarted}/>
+      <Conway length={10} width={10} started={started} reset={reset} setStarted={setStarted} setReset={setReset}/>
       
     </div>
   );

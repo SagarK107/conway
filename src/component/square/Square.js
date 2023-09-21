@@ -1,6 +1,5 @@
 import React from 'react'
 import "./square.css"
-import { useState, useEffect } from 'react';
 
 export default function Square({state,row,col,changeGrid}) {
   

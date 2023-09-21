@@ -1,5 +1,4 @@
 
-import PropTypes from 'prop-types'
 import "./conway.css"
 import Square from '../square/Square';
 import React, { useState, useEffect } from 'react';
@@ -47,7 +46,7 @@ function nextConwayState(arr)
                 new_arr[i][j] = arr[i][j];
             }
 
-            else if (neighbouring_cells_alive == 3)
+            else if (neighbouring_cells_alive === 3)
             {
                 new_arr[i][j] = 1;
             }
@@ -63,7 +62,7 @@ function Conway(props) {
     const length = props.length;
     const width = props.width;
     const started = props.started;
-    const reset = props.reset;
+    
     const setStarted = props.setStarted;
     const [grid,setGrid] = useState(Array(length).fill(0).map(e => Array(width).fill(0)));
     console.log(started);
